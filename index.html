@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+	 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+  	</script>
+  	<link rel="stylesheet" href="css/style.css">
+
+  	<!-- image -->
+  	<script type="text/javascript" src="js/image.js"></script>
+
+</head>
+
+<body>
+	<form id="inputForm">
+		<div class="header">
+			<div class="header__grid">
+				<img class="header__logo" src="https://uploads-ssl.webflow.com/5f6bc60e665f54545a1e52a5/6143750f1177056d60fc52d9_roboflow_logomark_inference.png" alt="Roboflow Inference">
+
+			</div>
+		</div>
+
+		<div class="content">
+
+			<div class="content__grid">
+				<div class="col-12-m8" id="fileSelectionContainer">
+					<label class="input__label" for="file">Select File</label>
+					<div class="flex">
+						<input class="input input--left flex-1" type="text" id="fileName" disabled />
+						<button id="fileMock" class="bttn right active">Browse</button>
+					</div>
+					<input style="display: none;" type="file" id="file" />
+				</div>
+
+				<div class="col-12">
+					<button type="submit" value="Run Inference" class="bttn__primary">Recognize</button>
+					<A href="camera" class="bttn__primary">Camera</A>
+				</div>
+			</div>
+			<div class="result" id="resultContainer">
+				<div class="divider"></div>
+				<div class="result__header">
+					<h3 class="headline">Result</h3>
+					<!-- <a href="#">Copy Code</a> -->
+				</div>
+				<pre id="output" class="codeblock" /> here is your json </pre>
+			</div>
+
+		</div>
+	</form>
+
+</body>
+
+</body>
+</html>
